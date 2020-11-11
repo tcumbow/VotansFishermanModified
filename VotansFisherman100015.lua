@@ -1190,6 +1190,7 @@ end
 
 local function Notify()
 	em:UnregisterForUpdate(data.reelInTimeout, Notify)
+	PD_ReelInFish()
 	if data.settings.showReelIn then
 		data.reelIn:SetAlpha(1)
 		data.reelIn:SetHidden(false)
@@ -3154,6 +3155,90 @@ end
 VOTANS_FISHERMAN = data
 
 em:RegisterForEvent(data.name, EVENT_ADD_ON_LOADED, OnAddOnLoaded)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
