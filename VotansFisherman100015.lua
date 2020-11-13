@@ -1190,6 +1190,7 @@ end
 
 local function Notify()
 	em:UnregisterForUpdate(data.reelInTimeout, Notify)
+	-- calling a global function from the add-on PixelData to let it know that a fish is ready to reel in
 	PD_ReelInFish()
 	if data.settings.showReelIn then
 		data.reelIn:SetAlpha(1)
