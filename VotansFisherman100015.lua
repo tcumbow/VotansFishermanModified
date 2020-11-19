@@ -1190,7 +1190,7 @@ end
 
 local function Notify()
 	em:UnregisterForUpdate(data.reelInTimeout, Notify)
-	if TcumbowPixelDataLoaded then -- checking to see if PixelData is loaded. If so, there's no need to display the alert since fishing is automated
+	if PixelDataLoaded then -- checking to see if PixelData is loaded. If so, there's no need to display the alert since fishing is automated
 		PD_ReelInFish() -- calling a global function from the add-on PixelData to let it know that a fish is ready to reel in
 	elseif data.settings.showReelIn then
 		data.reelIn:SetAlpha(1)
