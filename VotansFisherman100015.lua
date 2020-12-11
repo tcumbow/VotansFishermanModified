@@ -1190,16 +1190,16 @@ end
 
 local function Notify()
 	em:UnregisterForUpdate(data.reelInTimeout, Notify)
-	if PixelDataLoaded then -- checking to see if PixelData is loaded. If so, there's no need to display the alert since fishing is automated
-		PD_ReelInFish() -- calling a global function from the add-on PixelData to let it know that a fish is ready to reel in
+	if AutoAssistLoaded then -- checking to see if AutoAssist is loaded. If so, there's no need to display the alert since fishing is automated
+		PD_ReelInFish() -- calling a global function from the add-on AutoAssist to let it know that a fish is ready to reel in
 	elseif data.settings.showReelIn then
 		data.reelIn:SetAlpha(1)
 		data.reelIn:SetHidden(false)
 		data.reelIn:SetColor(data.reelInColor:UnpackRGB())
 		data.reelInAnim:PlayFromStart()
 		em:RegisterForUpdate(data.reelInTimeout, 3000, StopReelIn)
+		PlaySound(SOUNDS[data.settings.notificationSound])
 	end
-	PlaySound(SOUNDS[data.settings.notificationSound])
 end
 
 local function SlotUpdate(event, bagId, slotIndex, isNew)
