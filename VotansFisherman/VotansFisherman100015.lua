@@ -1851,7 +1851,7 @@ local function FishingNode()
 			end
 		end
 	else
-		if data.settings.autoSwitchBait then
+		if true then -- data.settings.autoSwitchBait then
 			local stack = select(3, GetFishingLureInfo(GetFishingLure()))
 			if lure ~= lureLast or stack <= 0 then
 				local selected, max, lureLast = 0, 0, nil
