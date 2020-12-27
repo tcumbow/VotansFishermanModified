@@ -2838,7 +2838,7 @@ function data:InitSettings()
 		setFunc = function(value)
 			self.settings.autoSwitchBait = value
 		end,
-		default = false
+		default = true
 	}
 
 	optionsTable[#optionsTable + 1] = {
