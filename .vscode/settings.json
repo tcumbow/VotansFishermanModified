@@ -1,5 +1,9 @@
 {
     "emeraldwalk.runonsave": {
     "commands": [{"cmd": "robocopy .\\VotansFisherman A:\\VotansFisherman /mir"}]
-    }
+    },
+    "Lua.diagnostics.globals": [
+        "LibPixelControl",
+        "zo_callLater"
+    ]
 }
