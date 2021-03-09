@@ -2507,7 +2507,7 @@ function data:InitSettings()
 		name = data.title,
 		displayName = data.title,
 		author = "votan",
-		version = "1.14.2",
+		version = "1.14.3",
 		-- slashCommand = "",
 		-- registerForRefresh = true,
 		registerForDefaults = true,
